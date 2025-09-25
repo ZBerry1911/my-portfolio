@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zachary Berry — Portfolio</title>
+  <style>
+    :root{
+      --accent:#0f62fe;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    header{background:linear-gradient(90deg, rgba(15,98,254,0.05), transparent);backdrop-filter: blur(2px);}
+    .container{max-width:1000px;margin:0 auto;padding:1rem}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+    .brand{font-size:1.25rem;font-weight:700;display:flex;gap:.5rem;align-items:center}
+    nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;padding:.45rem .6rem;border-radius:6px}
+    nav a:hover, nav a:focus{background:rgba(15,98,254,0.08);color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:1rem;padding:3rem 0;align-items:center}
+    .hero h1{font-size:2rem;margin:0 0 .5rem}
+    .hero p{margin:0;color:var(--muted)}
+    .card{background:var(--card);padding:1.25rem;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+
+    section{margin-bottom:1.25rem}
+    .grid{display:grid;gap:1rem}
+    .about{display:grid;grid-template-columns:1fr;gap:1rem}
+    .skills-list{display:flex;flex-wrap:wrap;gap:.5rem}
+    .skill{background:linear-gradient(90deg, rgba(15,98,254,0.06), rgba(15,98,254,0.02));padding:.45rem .65rem;border-radius:999px;font-size:.9rem;color:var(--accent);border:1px solid rgba(15,98,254,0.08)}
+
+    footer{padding:1.25rem 0;color:var(--muted);font-size:.9rem}
+
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 320px}
+      .about{grid-template-columns:1fr 320px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+  <div class="brand">Zachary Berry</div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Core Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="card">
+  <h1>Welcome  I'm Zachary Berry</h1>
+        <p>Strategic Planner with 10 years of experience in data analytics, specializing in turning complex data into actionable business strategies. Proven expertise in problem solving, project management, and analytical decision-making. Highly adaptable professional with a track record of delivering insights that drive organizational growth and efficiency.</p>
+        <p style="margin-top:1rem"><a href="resume.html" style="color:var(--accent);text-decoration:none;font-weight:600">View Resume →</a></p>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Quick Info</h3>
+  <p style="margin:0;color:var(--muted)">Napa, CA · (707) 337-7079<br><a href="mailto:zberry1911@protonmail.com">zberry1911@protonmail.com</a> · <a href="https://www.linkedin.com/in/zachary-berry-2108aa386/" target="_blank" rel="noopener noreferrer">linkedin.com/in/zachary-berry-2108aa386</a></p>
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card">
+        <h2>About Me</h2>
+  <p>Hello — I'm Zachary Berry, a data scientist with experience in statistical modeling, machine learning, and data visualization. I enjoy exploring datasets, designing experiments, and communicating findings to non-technical stakeholders.</p>
+        <p>My background includes working on projects in finance, healthcare, and marketing. I focus on reproducible workflows, clean code, and models that are interpretable and robust.</p>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+  <p style="margin:0"><strong>Email:</strong> zberry1911@protonmail.com</p>
+  <p style="margin:0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zachary-berry-2108aa386/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/zachary-berry-2108aa386/</a></p>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Core Skills</h2>
+      <ul style="margin-top:.5rem">
+        <li>Strategic Planning & Business Development</li>
+        <li>Data Analytics & Business Intelligence</li>
+        <li>Problem Solving & Analytical Thinking</li>
+        <li>Project Management & Execution</li>
+        <li>Scenario Planning & Risk Assessment</li>
+        <li>Adaptability & Critical Thinking</li>
+        <li>Change Management & Organizational Transformation</li>
+        <li>Goal Setting & KPI Tracking</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+  <p style="margin:0">If you'd like to work together or see my projects, email me at <a href="mailto:zberry1911@protonmail.com">zberry1911@protonmail.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+  <p>© 2025 Zachary Berry · Built with a little HTML + CSS</p>
+    </div>
+  </footer>
+</body>
+</html>
